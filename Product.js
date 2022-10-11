@@ -3,10 +3,10 @@ AWS.config.update( {
   region: 'us-east-1'
 });
 const dynamodb = new AWS.DynamoDB.DocumentClient();
-const dynamodbTableName = 'LinkTransaction';
+const dynamodbTableName = 'ProductPurchase';
 
-const userPath = '/LinkTransaction';
-const usersPath = '/LinkTransactions';
+const userPath = '/ProductPurchase';
+const usersPath = '/ProductPurchase';
 
 exports.handler = async function(event) {
   console.log('Request event: ', event);

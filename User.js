@@ -131,7 +131,7 @@ async function deleteUser(MobileNumber) {
     }
     return buildResponse(200, body);
   }, (error) => {
-    console.error('Do your custom error handling here. I am just gonna log it: ', error);
+    console.error('Error #', error);
   })
 }
 
